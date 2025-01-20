@@ -1,0 +1,15 @@
+.top_div{
+    display:grid;
+    grid-template-columns:2fr 1fr 60px;
+    gap:10px;
+}
+
+.renderTodo{
+    display:grid;
+    grid-template-columns:2fr 1fr 60px;
+    gap:10px;
+}
+.inputItem{
+    border:2px solid grey;
+    border-radius:5px;
+}

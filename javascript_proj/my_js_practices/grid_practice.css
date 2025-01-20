@@ -1,0 +1,41 @@
+.container{
+    display:grid;
+    justify-items:center; /*remove dis to c default */
+    align-items:center; /*remove dis to c default */
+    grid-template-columns: minmax(100px,150px) 1fr minmax(150px,250px);    
+    grid-template-rows: 100px minmax(min-content,auto) 100px;
+    grid-template-areas:
+       'header header header'
+       'right-side middle left-side'
+       'footer footer footer';
+    border:1px solid blue;
+    gap:2px;
+    height:100vh;
+}
+.item-1{
+    grid-area: header;
+    border:1px solid blue;
+}
+.item-2{
+    grid-area: right-side;
+    border:1px solid blue;
+}
+.item-3{
+    grid-area: middle;
+    border:1px solid blue;
+}
+.item-4{
+    grid-area: left-side;
+    border:1px solid blue;
+}
+.item-5{
+    grid-area: footer;
+    border:1px solid blue;
+}
+.special-item-1{
+    justify-self:start;
+    align-self:end;
+}
+.special-item-5{
+    align-self:stretch;
+}

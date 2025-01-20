@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Element Interaction</title>
+</head>
+<body>
+  <h1>Dynamic Dropdown Menu</h1>
+  
+  <label for="fruits">Choose a fruit:</label>
+  <select id="fruits">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+  </select>
+  
+  <br><br>
+
+  <!-- Buttons to interact with the dropdown -->
+  <button onclick="addOption()">Add Option</button>
+  <button onclick="removeOption()">Remove Selected</button>
+  <button onclick="showSelected()">Show Selected</button>
+
+  <p id="output"></p>
+
+  <script>
+    // Function to add a new option to the dropdown
+    function addOption() {
+      const dropdown = document.getElementById("fruits");
+      console.log(dropdown)
+      const newOption = document.createElement("option"); // Create a new <option>
+      newOption.value = "cherry"; // Set the value
+      newOption.text = "Cherry"; // Set the display text
+      dropdown.add(newOption); // Add the new option to the dropdown
+    }
+
+    // Function to remove the selected option
+    function removeOption() {
+      const dropdown = document.getElementById("fruits");
+      if (dropdown.selectedIndex !== -1) {
+        dropdown.remove(dropdown.selectedIndex); // Remove the selected option
+      } else {
+        alert("No option selected to remove!");
+      }
+    }
+
+    // Function to show the selected option
+    function showSelected() {
+      const dropdown = document.getElementById("fruits");
+      const output = document.getElementById("output");
+      const selectedValue = dropdown.value; // Get the value of the selected option
+      console.log(dropdown.selectedIndex)
+      const selectedText = dropdown.options[dropdown.selectedIndex].text; // Get the display text
+      output.textContent = `Selected: ${selectedText} (Value: ${selectedValue})`;
+    }
+  </script>
+</body>
+</html>

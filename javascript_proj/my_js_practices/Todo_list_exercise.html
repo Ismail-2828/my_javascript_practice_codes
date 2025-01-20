@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo_list</title>
+    <link rel="stylesheet" href="Todo_list_exercise.css">
+</head>
+<body>
+    <p>Todo List Schedule</p>
+    <div class="top_div">
+        <input class="js_inputItems inputItem" type="text" placeholder="Enter Todo items">
+        <input type="date" class="js_inputDate inputItem">
+        <button class="js_addButton" onclick="
+        todo();
+        renderTodoTemplate();
+        ">Add</button>
+        
+    </div>
+    
+    <div class="js_renderTodo renderTodo">
+        
+    </div>
+    
+    <script src="Todo_list_exercise.js"></script>
+</body>
+</html>

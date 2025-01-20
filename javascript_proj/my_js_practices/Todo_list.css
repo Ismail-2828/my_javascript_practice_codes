@@ -1,0 +1,38 @@
+.todo_div{
+    display:grid;
+    grid-template-columns: 2fr 1fr 60px;
+    margin-bottom:10px;
+    gap:10px;
+}
+.todo_temp{
+    display:grid;
+    grid-template-columns:2fr 1fr 60px;    
+    gap:10px; 
+    align-items: center;
+}
+
+.delete_button{
+    background-color:red;
+    color:white;
+    border: 2px solid pink;
+    border-radius:4px;
+    font-size:12px;
+    padding:10px;
+}
+
+.addButton{
+    background-color:blue;
+    color:white;
+    border: 2px solid pink;
+    border-radius:4px;
+    font-size:12px;
+    padding:10px;
+}
+.inputButton1{
+    border:2px solid grey;
+    width:400px;
+}
+.inputButton2{
+    border:2px solid grey;
+    width:200px;
+}

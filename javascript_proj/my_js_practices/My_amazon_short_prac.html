@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Short Practice</title>
+</head>
+<body>
+<label > 
+    Select One
+    <label class="js_selectOption"></label>
+</label>
+
+<script>
+
+    function selectOptions(){
+        let selectedOption = `<select id=number>`
+        for(i=1; i<21; i++){
+            selectedOption += `<option value="select-${i}">Option-${i}</option>`
+        }
+        selectedOption += `</select>`
+
+        return selectedOption
+    }
+
+    document.querySelector(".js_selectOption").innerHTML = selectOptions();
+</script>
+    
+</body>
+</html>

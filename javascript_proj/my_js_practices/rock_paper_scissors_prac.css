@@ -1,0 +1,15 @@
+body{
+    background-color:black;
+    color:white;
+}
+
+.img_div{
+    width:60px;
+    height:60px;
+    background-color:black;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+.images{
+    width:30px;
+}
