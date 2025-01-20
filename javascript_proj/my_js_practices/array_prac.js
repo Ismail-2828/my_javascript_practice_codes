@@ -23,4 +23,3 @@ myArray = [{'name':'',
 }];
 
 myArray[0]['name']='Moshood';
-console.log(myArray)
